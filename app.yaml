@@ -1,0 +1,13 @@
+runtime: nodejs10
+instance_class: F1
+# manual_scaling:
+#   instances: 1
+#resources:
+#  cpu: .5
+#  memory_gb: 0.18
+#  disk_size_gb: 10
+env_variables:
+  BOT_TOKEN: ""
+  INDEED_API_KEY: ""
+automatic_scaling:
+  min_idle_instances: 1

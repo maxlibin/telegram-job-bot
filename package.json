@@ -1,0 +1,32 @@
+{
+  "name": "findjobbot",
+  "version": "1.0.0",
+  "description": "Telegram find jobs bot",
+  "main": "src/index.js",
+  "scripts": {
+    "preinstall": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "build": "babel src --out-dir dist",
+    "serve": "node dist/index.js",
+    "now-start": "node dist/index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "telegraf": "^3.29.0",
+    "xml2js-es6-promise": "^1.1.1",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/runtime": "^7.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}

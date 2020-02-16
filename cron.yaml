@@ -1,0 +1,4 @@
+cron:
+- description: "Ping server"
+  url: /_ah/start
+  schedule: every 10 minutes
